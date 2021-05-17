@@ -1,0 +1,18 @@
+[
+  {
+    "input": "Auto",
+    "output": "true"
+  },
+  {
+    "input": "ein",
+    "output": "false"
+  },
+  {
+    "input": "Haus",
+    "output": "true"
+  },
+  {
+    "input": "die",
+    "output": "false"
+  }
+]
