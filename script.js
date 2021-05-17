@@ -15,7 +15,10 @@ if(trainingDataDownloadRequest.status === 200){
     // load trained data
     network.fromJSON(JSON.parse(trainingDataDownloadRequest.responseText));
 }else {
-    // the training data was not found.
+
+}
+
+function train(){
     // download dataset
     let dataSetDownloadRequest = new XMLHttpRequest();
     dataSetDownloadRequest.open("GET", "dataset.json", false);
@@ -26,4 +29,5 @@ if(trainingDataDownloadRequest.status === 200){
         log: true,
         logPeriod: 10,
     });
+    alert("The AI was successfully trained!");
 }
