@@ -4,16 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Web AI (by Ben Siebert)</title>
-    <script src="https://unpkg.com/brain.js"></script>
+    <script src="lib/brain.js"></script>
     <script src="script.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="lib/bootstrap.css">
 </head>
 <body>
-    <center>
-        <h1>Brain.js Example by Ben Siebert</h1>
-        <button class="btn btn-primary" onclick="alert('This process will take a few minutes to complete. Please wait!'); train()">Learn</button>
-        <button class="btn btn-primary" onclick="alert(network.run('Hallo'))">Test word 'Hallo'</button>
-    </center>
-
+    <div class="text-center">
+        <h1 class="text-center">
+            Brain.js Example by <b>Ben Siebert</b>
+        </h1>
+        <button class="btn btn-outline-primary" onclick="train()">KI Trainieren</button>
+        <button class="btn btn-outline-primary" onclick="alert(network.run('Haus'))">Wort Haus vorhersagen</button>
+        <button class="btn btn-outline-primary" onclick="alert(network.run('Auto'))">Wort Auto vorhersagen</button>
+        <button class="btn btn-outline-primary" onclick="alert(network.run('die'))">Wort die vorhersagen</button>
+    </div>
 </body>
 </html>

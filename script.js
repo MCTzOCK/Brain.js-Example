@@ -19,13 +19,14 @@ if(trainingDataDownloadRequest.status === 200){
 }
 
 function train(){
+    alert("This will take a few minutes")
     // download dataset
     let dataSetDownloadRequest = new XMLHttpRequest();
     dataSetDownloadRequest.open("GET", "dataset.json", false);
     dataSetDownloadRequest.send(null);
     // train
     network.train(JSON.parse(dataSetDownloadRequest.response), {
-        iterations: 20000, // the maximum times to iterate the training data
+        iterations: 10000, // the maximum times to iterate the training data
         log: true,
         logPeriod: 10,
     });

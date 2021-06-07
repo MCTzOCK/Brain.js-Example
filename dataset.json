@@ -1,18 +1,18 @@
 [
   {
     "input": "Auto",
-    "output": "true"
+    "output": "groß"
   },
   {
     "input": "ein",
-    "output": "false"
+    "output": "klein"
   },
   {
     "input": "Haus",
-    "output": "true"
+    "output": "groß"
   },
   {
     "input": "die",
-    "output": "false"
+    "output": "klein"
   }
 ]
